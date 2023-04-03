@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap">
+        
+        <!-- 마우스커스텀  -->
+        <!-- <div class="theBall-outer">
+            <div class="theBall"></div>
+        </div> -->
+
+        <!-- side-menu on 붙일때 fix-bar에도 on 붙어야함. -->
+        <div class="side-menu">
+            <div class="fix-bar">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="menu">
+                <ul class="menu-title">
+                    <li data-alt="tab-page1" href="#tab-about" class="tab-menu" id="offset-about" >
+                        <div class="main">about me</div>
+                        <div class="sub">about me</div>
+                    </li>
+                
+                </ul>
+                <ul class="menu-title">
+                    <li data-alt="tab-page2" href="#tab-portfolio" class="tab-menu" id="offset-portfolio" >
+                        <div class="main">portfolio</div>
+                        <div class="sub">portfolio</div>
+                    </li>
+                
+                </ul>
+                <ul class="menu-title">
+                    <li data-alt="tab-page3" href="#tab-contacts" class="tab-menu" id="offset-contacts" >
+                        <div class="main">contacts</div>
+                        <div class="sub">contacts</div>
+                    </li>
+                
+                </ul>
+            </div>
+            `
+        </div>
+        
+        <div class="section-wrap">
+            <section class="section main-page" >
+                <div class="container">
+                    <div class="row-1">
+                        <p>challenging</p>
+                        <div class="rectangle">
+                            <img src="./img/Rectangle-50.png" alt="">
+                        </div>
+                        <div class="img bl">
+                            <img src="./img/challenging.png" alt="">
+                        </div>
+                        <span>and</span>
+                    </div>
+                    <div class="row-2">
+                        <div class="img bl">
+                            <img src="./img/growing.png" alt="">
+                        </div>
+                        <p>growing ,</p>
+                    </div>
+                    <div class="row-3">
+                        <p>webpublisher</p>
+                        <div class="img bl">
+                            <img src="./img/web.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row-4">
+                        <div class="rectangle">
+                            <img src="./img/Rectangle-50.png" alt="">
+                        </div>
+                        <p>Park Eunhwan</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section about" id="tab-about">
+                <div class="container" id="offset1" >
+                    <div class="about-right">
+                        <div class="title up">
+                            about
+                        </div>
+                        <div class="title down">
+                            me
+                        </div>
+
+                        <div class="img">
+                            <img src="./img/Rectangle-70.png" alt="">
+                        </div>
+                    </div>
+                    <div class="about-left">
+                        <div class="profile head">
+                           <p class="head-title bl2">profile</p>
+                          
+                           <div class="body">
+                                <div class="body-1">
+                                    <p>박은환</p>
+                                    <p>1988.06.25</p>
+                                </div>
+                                <div class="body-2">
+                                    <p>park eunhwan</p>
+                                    <p>dmsghks6@gmail.com</p>
+                                </div>
+                               
+                           </div>
+                            
+                        </div>
+
+                        <div class="education head">
+                            <p class="head-title bl2" >education</p>
+                            
+                            <div class="body">
+                                <div class="body-1">
+                                    <p>2012.03</p>
+                                    <p>2007.03</p>
+                                </div>
+
+                                <div class="body-2">
+                                    <p>수원과학대 항공관광과 졸업</p>
+                                    <p>선일여자고등학교 졸업</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="license head">
+                            <p class="head-title bl2">license</p>
+                            <div class="body">
+                                <div class="body-1">
+                                    <p>2022.09</p>
+                                    <p>2022.10</p>
+                                    <p>2015.06</p>
+                                </div>
+                                <div class="body-2">
+                                    <p>GTQi 1급</p>
+                                    <p>GTQ 1급</p>
+                                    <p>2종 보통 운전면허증</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills head">
+                            <p class="head-title bl2">skills</p>
+                            <div class="body">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>JavaScript</p>
+                                <p>Jquery</p>
+                                <p>Photoshop</p>
+                                <p>Illustrator</p>
+                                <p>Figma</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section portfolio"  id="tab-portfolio" >
+                <div class="panel container" id="offset2" >
+
+                    <div class="portfolio-left">
+                        <div class="img">
+                            <!-- <img src="./img/Rectangle-100.png" class="opa100" alt=""> -->
+                           
+                        </div>
+                        
+                    </div>
+                    <div class="portfolio-right">
+                        <div class="title">
+                            portfolio
+                        </div>
+
+                        <div class="rotate-wrap">
+                            <div class="rotate">
+                                <div class="chapter chap-1 bl">
+                                    <div class="main">web site</div>
+                                    <div class="sub">web site</div>
+                                </div>
+                            </div>
+                            
+                            <div class="rotate">
+                                <div class="chapter chap-2 bl">
+                                    <div class="main">ui/ux project</div>
+                                    <div class="sub">ui/ux project</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                
+                </div>
+
+                <section class="panel web-1">
+                    <div class="container"> 
+                        <div class="web-1-left">
+                            <p class="title">web site</p>
+
+                            <div class="info-box">
+                                <div class="info-left">
+                                    <div class="top">
+                                        <div class="name">
+                                            <p>page :</p>
+                                            <p>tool :</p>
+                                        </div>
+
+                                        <div class="explain">
+                                            <p>main</p>
+                                            <p>html css javaScript
+                                                jQuery illustrator 
+                                                photoshop figma
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+
+                                   <div class="line"></div>
+
+                                    <div class="bottom">
+                                        <ul>
+                                            <li>horizontal swiper</li>
+                                            <li>vertical swiper</li>
+                                            <li>tabmenu</li>
+                                            <li>accordian tabmenu</li>
+                                            <li>top button</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="info-right">
+                                    <div class="name">
+                                        overview
+                                    </div>
+                                    <div class="explain">
+                                        많은 학교 홈페이지들이빨강 파랑 등 원색을 많이 사용하고 다소 복잡하고 난해한 레이아웃을 사용하여,
+                                        저는 최대한 무채색으로 채도를 낮추고 직선을 사용하여 심플한 느낌으로 리뉴얼 하였습니다.
+                                    </div>
+
+                                </div>
+                                
+                                
+
+                            </div>
+
+                            <div class="big-title">
+                                <div class="nub">
+                                    <img src="./img/nub1.png" alt="">
+                                </div>
+                                
+                                <p class="portfolio-name">ewha university</p>
+                            </div>
+                        </div>
+
+                        
+                        <div class="web-1-right bl2">
+                            <a href="https://dmsghks6.github.io/ewha/" target="_blank" class="ewha"></a>
+                        </div>
+
+                    </div>
+                </section> 
+
+                <section class="panel web-2">
+                    <div class="container">
+                        <div class="web-2-left bl2">
+                            <a href="https://dmsghks6.github.io/thebarnnet/" target="_blank" class="thebarnnet"></a>    
+                        </div>
+
+                        <div class="web-2-right">
+                            <div class="big-title">
+                                <div class="nub">
+                                    <img src="./img/nub2.png" alt="">
+                                </div>
+                                
+                                <div class="portfolio-name">the barnnet</div>
+                            </div>  
+
+                            <div class="info-box">
+                                <div class="info-left">
+                                    <div class="top">
+                                        <div class="name">
+                                            <p>page :</p>
+                                            <p>tool :</p>
+                                        </div>
+
+                                        <div class="explain">
+                                            <p>main</p>
+                                            <p>html css javaScript
+                                                jQuery illustrator 
+                                                photoshop figma
+                                            </p>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="line"></div>
+
+                                    <div class="bottom">
+                                        <ul>
+                                            <li>scroll trigger</li>
+                                            <li>slide animation</li>
+                                            <li>a.o.s</li>
+                                            <li>magnetic cursor</li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="info-right">
+                                    <div class="name">
+                                        overview
+                                    </div>
+                                    <div class="explain">
+                                        “사진과 책” 이라는 컨셉으로 진행 하였습니다. 
+                                        사진의 느낌은 슬라이드를 필름처럼 진행하였고 , 폴라로이드 사진을 활용하여 컨셉의 느낌을 이어갔습니다. 
+                                        책은 magnetic효과를 사용하여 책갈피처럼 표현하고 책의 사진을 이용하여 컨셉의 느낌을 통일 시켰습니다. 
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+
+                <section class="panel uiux-1">
+                    <div class="container">
+                        <div class="uiux-1-top bl2">
+                            <a href ="https://dmsghks6.github.io/modify/" class="modify" target="_blank"></a>
+                        </div>
+
+                        <div class="uiux-1-bottom"> 
+                            <div class="info-box">
+                                <div class="info-left">
+                                    <div class="top">
+                                        <div class="first">
+                                            <p><span>project name</span>: modify</p>
+                                            <p><span> period</span>: 2022.11 - 2023.01</p>
+                                            <p><span> tool </span>: illustrator
+                                                photoshop figma
+                                            </p>
+                                            <p><span>number of persons </span>: 5</p>
+                                            <p><span>level of contribution </span> : 30%</p>
+                                        </div>
+                                        <div class="second">
+                                            <div class="name">overview</div>
+                                            <div class="explain">
+                                                기존에 사용하던 가구 브랜드의 불편함의 개선점은 개선하고, 새로운 브랜드에 맞는 색다름을 추가하여 브랜드 “modify”를 만들게 되었습니다
+                                            </div>
+                                        </div>
+                                        <div class="third">
+                                            <div class="name">concept</div>
+                                            <div class="explain">
+                                                비례 , 조화, 균형의 조형미와 모던미가 돋보이는 “몬드리안” 을 모티브로 하였습니다. 
+                                                전체적인 디자인을 직선과 직각의 형태로 하였으며 색상을 몬드리안의 색상처럼 비비드한 색으로 하였습니다. 
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+
+                                    <div class="bottom">
+                                        <p>modify</p>
+                                    </div>
+                                </div>
+
+                                <div class="info-right">
+                                   <p>ui/ux</p>
+                                   <p>project</p>
+
+                                </div>
+                                
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                 
+            </section>
+
+            <section class="contacts" id="tab-contacts">
+                <div class="container" id="offset3" >
+                    <div class="txt-wrap">
+                        <div class="title" id="rainbow">
+                            contacts
+                        </div>
+
+                        <div class="contact-point">
+                            <p class="phone">phone : 010-8267-0625</p>
+                            <p class="email">
+                                <a href="mailto: " target="_blank">
+                                    email : dmsghks6@gmail.com
+                                </a>
+                                
+                            </p>
+                        </div>
+                       
+                        <div class="last">
+                            Thankyou
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+          
+        </div>
+
+    </div>
+    
+</body>
+</html>
