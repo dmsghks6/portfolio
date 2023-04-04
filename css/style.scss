@@ -1,41 +1,41 @@
 @import "./reset";
 
-.theBall,
-.theBall-outer{
-    width: 20px;
-    height: 20px;
-    mix-blend-mode: exclusion;
-}
+// .theBall,
+// .theBall-outer{
+//     width: 20px;
+//     height: 20px;
+//     mix-blend-mode: exclusion;
+// }
 
-.theBall-outer{
-    position: fixed;
-    top: -20px;
-    left: -20px;
-    pointer-events: none;
-    z-index: 99999;
-}
+// .theBall-outer{
+//     position: fixed;
+//     top: -20px;
+//     left: -20px;
+//     pointer-events: none;
+//     z-index: 99999;
+// }
 
-.theBall{
-    position: absolute;
-    background-color: #dbdbdb;
-    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transform-origin: center center;
-}
+// .theBall{
+//     position: absolute;
+//     background-color: #dbdbdb;
+//     transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+//     transform-origin: center center;
+// }
 
-.theBall-outer.zoom .theBall{
-    border-radius: 50%;
-    transform: scale(2.5);
-}
+// .theBall-outer.zoom .theBall{
+//     border-radius: 50%;
+//     transform: scale(2.5);
+// }
 
-.theBall-outer.zoom2 .theBall{
-    border-radius: 50%;
-    transform: scale(5);
-}
+// .theBall-outer.zoom2 .theBall{
+//     border-radius: 50%;
+//     transform: scale(5);
+// }
 
-.theBall-outer.zoom3 .theBall{
-    border-radius: 50%;
-    transform: scaleY(2) scaleX(5);
-}
+// .theBall-outer.zoom3 .theBall{
+//     border-radius: 50%;
+//     transform: scaleY(2) scaleX(5);
+// }
 
 
 
@@ -1886,3 +1886,374 @@
 
 }
 
+
+@media (max-width : 500px){
+
+    .side-menu{
+        top: 100%;
+        right: 0;
+
+        .fix-bar{
+            width: 100%;
+            height: 50px;
+            border-width: 3px;
+            top: calc(100% - 50px);
+            left: 0;  
+
+            .hamburger{
+                transform: rotate(90deg);
+            }
+
+            .hamburger.on{
+                height: 25px;
+                width: 25px;
+
+                span{
+                    &:nth-child(1){
+                        top: 0px;
+                        height: 25px;
+                        left: 50%;
+                    }
+
+                    &:nth-child(2){
+                        top: 32%;
+                        left: 82%;
+                    }
+
+                    &:nth-child(3){
+                        top: -21%;
+                        left: 81%;
+                    }
+                }
+            }
+        }
+
+    
+
+        .fix-bar.on{
+           top: 0;
+        }
+
+        .menu{
+            
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 24px;
+            
+            .menu-title{
+                writing-mode: initial;
+                transform: rotate(0deg);
+                font-size: 3rem;
+                perspective: none;
+
+                width: 100%;
+                height: 100px;
+
+                // pointer-events: none;
+                color: $mainColor;
+            }
+        }
+    }
+
+    .side-menu.on{
+        top: 0;
+    }
+
+    .main-page{
+        width: 100vw;
+
+        .container{
+            width: 100%;
+
+            .row-1{
+                font-size: 40px;
+
+                .img{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 0px;
+
+                    pointer-events: none;
+                }
+
+                span{
+                    font-size: 30px;
+                }
+            }
+
+            .row-2{
+                font-size: 40px;
+
+                .img{
+                    height: 50px;
+                    width: 50px;
+
+                    pointer-events: none;
+                }
+            }
+
+            .row-3{
+
+                .img{
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 0px;
+
+                    pointer-events: none;
+                }
+            }
+
+            .row-4{
+                .rectangle{
+                    width: 52px;
+                    height: 56px;
+                }
+
+                p{
+                    font-size: 70px;
+                    -webkit-text-stroke: 1.5px;
+                    -webkit-text-stroke-color: #000000;
+                }
+            }
+        }
+    }
+
+
+    // 어바웃
+
+    .about{width: 100vw;
+        .container{
+            width: 100%;
+            .about-left{
+                .body-1{
+                    font-size: 1.125rem;
+                    width: 150px;
+                }
+
+                .body-2{
+                    font-size: 1.125rem;
+                    
+                }
+            }
+        }
+    }
+
+
+    // 첫장 
+    .portfolio{
+        .container{
+            width: 100vw;
+            .portfolio-right{
+                padding-right: 30px;
+
+                .title{
+                    font-size: 80px;
+                }
+
+                .chapter{
+                    font-size: 60px;
+                }
+            }
+        }
+    }
+
+    .rotate-wrap{
+        .rotate{
+            height: 80px;
+        }
+    }
+
+    // 이화
+
+    .portfolio{
+        .web-1{
+            .web-1-left{
+                height: 50%;
+
+                .thebarnnet{
+                    width: 75%;
+                    height: 100%;
+                    margin: 0 auto;
+                }
+
+
+                .info-box{
+                    font-size: 1rem;
+                    width: 66%;
+
+                    .info-right{
+                        display: none;
+                        // .explain{
+                        //     font-size: 0.75rem;
+                        // }
+                    }
+
+                }
+                .title{
+                    font-size: 70px;
+                    margin-left: 10px;
+                }
+
+                .big-title{
+
+                    .nub{
+                        width: 22px;
+                        height: 30px;
+                    }
+                    .portfolio-name{
+                        font-size: 38px;
+                    }
+                }
+            }
+
+            .web-1-right{
+                .ewha{
+                    height: 40%;    
+                }
+            }
+        }
+    }
+
+    .portfolio{
+        .web-2{
+            .container{
+
+                .web-2-right{
+                    height: 40%;
+
+                    .info-box{
+                        font-size: 1rem;
+
+                        .info-right{
+                            display: none;
+                        }
+                    }
+
+                    .name{
+                        font-size: 1.25rem;
+                    }
+
+                    .explain{
+                        font-size: 0.875rem;
+                    }
+                }
+                
+                .web-2-left{
+                    .thebarnnet{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .uiux-1{
+        .container{
+            .uiux-1-bottom{
+                .info-box{
+                    .info-left{
+                        .top{
+                            .first{
+                                width: 50%;
+                            }
+
+                            .second{
+                                width: 50%;
+                            }
+
+                            .third{
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .info-right{
+                        margin-top: 22px;
+                        width: 95%;
+                    }
+                }
+            }
+        }
+    }
+
+    .contacts{
+        .container{
+            width: 100%;
+
+            .txt-wrap{
+
+                #rainbow{
+                    font-size: 5rem;
+                }
+
+                .contact-point{
+                    font-size: 2rem;
+                }
+
+                .last{
+                    font-size: 3rem;
+                    
+                }
+            }
+        }   
+    }
+}
+
+@media (max-width : 375px){
+
+    .portfolio{
+        .web-1{
+            .web-1-left{
+                .title{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+
+
+    .uiux-1{
+        .container{
+            .uiux-1-bottom{
+                .info-box{
+                    .info-left{
+                        .top{
+                            .explain{
+                                font-size: 0.75rem;
+                            }
+                        }
+
+                        .bottom{
+                            font-size: 50px;
+                            bottom: 11%;
+                        }
+                    }
+
+                    .info-right{
+                        font-size: 3rem;
+                        margin-top: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .contacts{
+        .container{
+            .txt-wrap{
+                .contact-point{
+                    font-size: 1.5rem;
+                }
+
+                .last{
+                    font-size: 3rem;
+
+                }
+            }
+        }
+    }
+}
