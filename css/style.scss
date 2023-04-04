@@ -784,6 +784,33 @@
             background-position: center;
             width: 54vw;
             height: 100%;
+
+            .click-down{
+                position: absolute;
+                top: 40%;
+                right: 30px;
+                font-size: 40px;
+                animation: bounce 1.75s infinite;
+                color: #fbffef;
+
+                @keyframes bounce {
+                    0%,
+                    20%,
+                    50%,
+                    80%,
+                    100% {
+                      transform: translateY(0);
+                    }
+                  
+                    40% {
+                      transform: translateY(-7px);
+                    }
+                  
+                    60% {
+                      transform: translateY(-3.5px);
+                    }
+                }
+            }
         }
       
     }
@@ -827,6 +854,33 @@
             background-position: center;
             width: 63vw;
             height: 95%;
+
+            .click-down{
+                position: absolute;
+                top: 50%;
+                right: 60px;
+                font-size: 40px;
+                animation: bounce 1.75s infinite;
+                color: #ffffff;
+
+                @keyframes bounce {
+                    0%,
+                    20%,
+                    50%,
+                    80%,
+                    100% {
+                      transform: translateY(0);
+                    }
+                  
+                    40% {
+                      transform: translateY(-7px);
+                    }
+                  
+                    60% {
+                      transform: translateY(-3.5px);
+                    }
+                }
+            }
         }
    
     }
@@ -941,6 +995,33 @@
                 display: block;
                 width: 100%;
                 height: 100%;
+
+                .click-down{
+                    position: absolute;
+                    top: 120px;
+                    right: 60px;
+                    font-size: 40px;
+                    animation: bounce 1.75s infinite;
+                    color: #be0000;
+    
+                    @keyframes bounce {
+                        0%,
+                        20%,
+                        50%,
+                        80%,
+                        100% {
+                          transform: translateY(0);
+                        }
+                      
+                        40% {
+                          transform: translateY(-7px);
+                        }
+                      
+                        60% {
+                          transform: translateY(-3.5px);
+                        }
+                    }
+                }
             }
         }
 
@@ -1693,11 +1774,32 @@
                     .ewha{
                         width: 100%;
                         height: 55%;
+
+                        .click-down{
+                            top: 5%;
+                            left: 30px;
+                            font-size: 40px;
+                            color: #000000;
+                      
+                        }
                     }
                 }
             }
         }
        
+    }
+
+    .portfolio{
+        .web-2{
+            .web-2-left{
+                .thebarnnet{
+                    .click-down{
+                        font-size: 30px;
+                  
+                    }
+                }
+            }
+        }
     }
 
 
@@ -2069,50 +2171,51 @@
 
     .portfolio{
         .web-1{
-            .web-1-left{
-                height: 50%;
-
-                .thebarnnet{
-                    width: 75%;
-                    height: 100%;
-                    margin: 0 auto;
-                }
-
-
-                .info-box{
-                    font-size: 1rem;
-                    width: 66%;
-
-                    .info-right{
-                        display: none;
-                        // .explain{
-                        //     font-size: 0.75rem;
-                        // }
+            .container{
+                .web-1-left{
+                    height: 50%;
+    
+    
+                    .info-box{
+                        font-size: 1rem;
+                        width: 66%;
+    
+                        .info-right{
+                            display: none;
+                            // .explain{
+                            //     font-size: 0.75rem;
+                            // }
+                        }
+    
                     }
-
-                }
-                .title{
-                    font-size: 70px;
-                    margin-left: 10px;
-                }
-
-                .big-title{
-
-                    .nub{
-                        width: 22px;
-                        height: 30px;
+                    .title{
+                        font-size: 70px;
+                        margin-left: 10px;
                     }
-                    .portfolio-name{
-                        font-size: 38px;
+    
+                    .big-title{
+    
+                        .nub{
+                            width: 22px;
+                            height: 30px;
+                        }
+                        .portfolio-name{
+                            font-size: 38px;
+                        }
+                    }
+                }
+    
+                .web-1-right{
+                    .ewha{
+                        height: 40%;  
+                        
+                        .click-down{
+                            font-size: 30px;
+                        }
                     }
                 }
             }
-
-            .web-1-right{
-                .ewha{
-                    height: 40%;    
-                }
-            }
+         
         }
     }
 
@@ -2153,10 +2256,20 @@
 
     .uiux-1{
         .container{
+            .uiux-1-top{
+                .modify{
+                    .click-down{
+                        font-size: 30px;
+                        right: 10px;
+                    }
+                }
+            }
+
             .uiux-1-bottom{
                 .info-box{
                     .info-left{
                         .top{
+
                             .first{
                                 width: 50%;
                             }
