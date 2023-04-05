@@ -1714,7 +1714,7 @@ img, svg, video, iframe {
   }
 }
 @media (max-width: 376px) {
-  .side-menu .fix-bar:hover {
+  .side-menu .fix-bar:hover::after {
     pointer-events: none;
   }
   .main-page .container .row-3 {

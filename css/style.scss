@@ -2666,7 +2666,9 @@
     .side-menu{
         .fix-bar{
             &:hover{
-                pointer-events: none;
+                &::after{
+                    pointer-events: none;
+                }
             }
         }
     }
