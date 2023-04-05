@@ -1717,14 +1717,22 @@ img, svg, video, iframe {
   .side-menu .fix-bar:hover {
     pointer-events: none;
   }
+  .main-page .container .row-3 {
+    font-size: 55px;
+  }
   .main-page .container .row-4 .rectangle {
     transform: translate(38px, -20px);
     width: 52px;
     height: 52px;
   }
+  .main-page .container .row-4 p {
+    font-size: 50px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #000000;
+  }
   .about .container .about-right .img {
-    left: -28%;
-    height: 230px;
+    left: 2%;
+    height: 190px;
   }
   .portfolio .web-1 .container .web-1-left .title {
     font-size: 50px;
@@ -1742,6 +1750,12 @@ img, svg, video, iframe {
   .portfolio .web-2 .container .web-2-left .thebarnnet {
     width: 100%;
     height: 87%;
+  }
+  .web-3 .container .canvas {
+    width: 100%;
+  }
+  .web-3 .container .canvas .canvas-wrap {
+    animation: slider 55s linear infinite;
   }
   .uiux-1 .container .uiux-1-bottom .info-box .info-left .top .explain {
     font-size: 0.75rem;

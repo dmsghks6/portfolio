@@ -2674,11 +2674,21 @@
 
     .main-page{
         .container{
+
+            .row-3{
+                font-size: 55px;
+            }
             .row-4{
                 .rectangle{
                     transform: translate(38px, -20px);
                     width: 52px;
                     height: 52px;
+                }
+
+                p{
+                    font-size: 50px;
+                    -webkit-text-stroke: 1px;
+                    -webkit-text-stroke-color: #000000;
                 }
             }
         }
@@ -2689,8 +2699,8 @@
         .container{
             .about-right{
                 .img{
-                    left: -28%;
-                    height: 230px;
+                    left: 2%;
+                    height: 190px;
                 }
                 
             }
@@ -2742,6 +2752,21 @@
                     }
                 }
             }
+        }
+    }
+
+    .web-3{
+        .container{
+            .canvas{
+                width: 100%;
+
+                .canvas-wrap{
+                    animation: slider 55s linear infinite;
+                }
+                
+                
+            }
+            
         }
     }
   
