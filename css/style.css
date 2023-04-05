@@ -1728,8 +1728,8 @@ img, svg, video, iframe {
     -webkit-text-stroke-color: #000000;
   }
   .about .container .about-right .img {
-    left: 2%;
-    height: 190px;
+    left: -22%;
+    height: 213px;
   }
   .portfolio .web-1 .container .web-1-left .title {
     font-size: 50px;
@@ -1764,6 +1764,9 @@ img, svg, video, iframe {
   .uiux-1 .container .uiux-1-bottom .info-box .info-right {
     font-size: 3rem;
     margin-top: 14px;
+  }
+  .contacts .container {
+    background-image: none;
   }
   .contacts .container .txt-wrap .contact-point {
     font-size: 1.5rem;
