@@ -2661,17 +2661,17 @@
     }
 }
 
-@media (max-width : 376px){
+@media (max-width : 380px){
 
-    .side-menu{
-        .fix-bar{
-            &:hover{
-                &::after{
-                    pointer-events: none;
-                }
-            }
-        }
-    }
+    // .side-menu{
+    //     .fix-bar{
+    //         &:hover{
+    //             &::after{
+    //                 pointer-events: none;
+    //             }
+    //         }
+    //     }
+    // }
 
 
     .main-page{

@@ -1713,10 +1713,7 @@ img, svg, video, iframe {
     font-size: 3rem;
   }
 }
-@media (max-width: 376px) {
-  .side-menu .fix-bar:hover::after {
-    pointer-events: none;
-  }
+@media (max-width: 380px) {
   .main-page .container .row-3 {
     font-size: 55px;
   }
