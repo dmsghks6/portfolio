@@ -1664,6 +1664,9 @@ img, svg, video, iframe {
     width: 100%;
     height: 100%;
   }
+  .portfolio .web-3 .container .canvas {
+    width: 100%;
+  }
   .portfolio .web-3 .container .web-3-wrap {
     display: block;
   }

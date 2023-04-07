@@ -1,48 +1,50 @@
 $(document).ready(function(){
 
-    $(function() {
 
-        var prefix = function() {
+    // 커서 커스텀 
+    // $(function() {
 
-          var a = window.getComputedStyle(document.documentElement, ""),
+    //     var prefix = function() {
 
-            b = (Array.prototype.slice.call(a).join("").match(/-(moz|webkit|ms)-/) || "" === a.OLink && ["", "o"])[1];
+    //       var a = window.getComputedStyle(document.documentElement, ""),
 
-          return "WebKit|Moz|MS|O".match(new RegExp("(" + b + ")", "i"))[1], "-" + b + "-"
+    //         b = (Array.prototype.slice.call(a).join("").match(/-(moz|webkit|ms)-/) || "" === a.OLink && ["", "o"])[1];
 
-        }();
+    //       return "WebKit|Moz|MS|O".match(new RegExp("(" + b + ")", "i"))[1], "-" + b + "-"
 
-        $(document).mousemove(function(e) {
+    //     }();
 
-          mouseX = e.pageX + 15;
+    //     $(document).mousemove(function(e) {
 
-          mouseY = e.pageY - $(window).scrollTop() + 15;
+    //       mouseX = e.pageX + 15;
 
-          $('.theBall-outer').attr('style', prefix + 'transform:translate(' + mouseX + 'px,' + mouseY + 'px)');
+    //       mouseY = e.pageY - $(window).scrollTop() + 15;
 
-        });
-      })
+    //       $('.theBall-outer').attr('style', prefix + 'transform:translate(' + mouseX + 'px,' + mouseY + 'px)');
 
-    //   cursor change
-    $('.bl').hover(function(){
-        $('.theBall-outer').addClass('zoom');
-    },function(){
-        $('.theBall-outer').removeClass('zoom');
-    });
+    //     });
+    //   })
 
-    
-    $('.bl2').hover(function(){
-        $('.theBall-outer').addClass('zoom2');
-    },function(){
-        $('.theBall-outer').removeClass('zoom2');
-    });
+    // //   cursor change
+    // $('.bl').hover(function(){
+    //     $('.theBall-outer').addClass('zoom');
+    // },function(){
+    //     $('.theBall-outer').removeClass('zoom');
+    // });
 
     
-    $('.bl3').hover(function(){
-        $('.theBall-outer').addClass('zoom3');
-    },function(){
-        $('.theBall-outer').removeClass('zoom3');
-    });
+    // $('.bl2').hover(function(){
+    //     $('.theBall-outer').addClass('zoom2');
+    // },function(){
+    //     $('.theBall-outer').removeClass('zoom2');
+    // });
+
+    
+    // $('.bl3').hover(function(){
+    //     $('.theBall-outer').addClass('zoom3');
+    // },function(){
+    //     $('.theBall-outer').removeClass('zoom3');
+    // });
 
 
 
@@ -65,22 +67,13 @@ $(document).ready(function(){
 
     // offset top 값을 하나하나 저장해서 
 
-    // $('.tab-menu').click(function(x){
-    //     x.preventDefault()
-    //     const top = $(this).attr('href');
-    //     $('html, body').stop().animate({
-    //         scrollTop : $(top).offset().top
-    //     },1000)
-
-    // })
-
     
     const btn1 = document.querySelector('#offset-about')
     const btn2 = document.querySelector('#offset-portfolio')
-    // const btn3 = document.querySelector('#offset-contacts')
+    
     const box_pst1 = document.querySelectorAll('#offset1')[0].offsetTop
     const box_pst2 = document.querySelectorAll('#offset2')[0].offsetTop
-    // const box_pst3 = document.querySelectorAll('#offset3')[0].offsetTop
+   
 
     btn1.addEventListener('click',function(){
     window.scrollTo({left:0, top:box_pst1, behavior:'smooth'}) 
@@ -166,6 +159,7 @@ $('#offset-contacts').click(function(x){
     const _btn = new RainbowButton(document.querySelector("#rainbow"))
      //end 글자 색 바꾸기 
 
+     
 
     //  스크롤트리거
 
