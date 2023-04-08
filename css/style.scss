@@ -2546,11 +2546,11 @@
                     }
 
                     .name{
-                        font-size: 1.25rem;
+                        font-size: 1rem;
                     }
 
                     .explain{
-                        font-size: 0.875rem;
+                        font-size: 1rem;
                     }
                 }
                 
@@ -2576,13 +2576,19 @@
                     display: block;
     
                     .web-3-left{
-                        margin-bottom: 24px;
+                        margin: 0 8px 32px 0;
                         display: flex;
                         flex-direction: row-reverse;
+                        
                         .info-box{
-                          
+                            font-size: 1rem;
                             .info-right{
                                 display: none;
+                            }
+
+                            .info-left{
+                                width: 200px;
+
                             }
                         }
                     }
@@ -2630,11 +2636,17 @@
                                 display: none;
                             }
                         }
+
+                        .bottom{
+                            font-size: 4rem;
+                            bottom: 10%;
+                        }
                     }
 
                     .info-right{
                         margin-top: 22px;
                         width: 95%;
+                        font-size: 3.5rem;
                     }
                 }
             }

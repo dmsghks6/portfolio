@@ -1655,10 +1655,10 @@ img, svg, video, iframe {
     display: none;
   }
   .portfolio .web-2 .container .web-2-right .name {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   .portfolio .web-2 .container .web-2-right .explain {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
   .portfolio .web-2 .container .web-2-left .thebarnnet {
     width: 100%;
@@ -1671,12 +1671,18 @@ img, svg, video, iframe {
     display: block;
   }
   .portfolio .web-3 .container .web-3-wrap .web-3-left {
-    margin-bottom: 24px;
+    margin: 0 8px 32px 0;
     display: flex;
     flex-direction: row-reverse;
   }
+  .portfolio .web-3 .container .web-3-wrap .web-3-left .info-box {
+    font-size: 1rem;
+  }
   .portfolio .web-3 .container .web-3-wrap .web-3-left .info-box .info-right {
     display: none;
+  }
+  .portfolio .web-3 .container .web-3-wrap .web-3-left .info-box .info-left {
+    width: 200px;
   }
   .portfolio .web-3 .container .web-3-wrap .web-3-right {
     width: 100%;
@@ -1699,9 +1705,14 @@ img, svg, video, iframe {
   .uiux-1 .container .uiux-1-bottom .info-box .info-left .top .third {
     display: none;
   }
+  .uiux-1 .container .uiux-1-bottom .info-box .info-left .bottom {
+    font-size: 4rem;
+    bottom: 10%;
+  }
   .uiux-1 .container .uiux-1-bottom .info-box .info-right {
     margin-top: 22px;
     width: 95%;
+    font-size: 3.5rem;
   }
   .contacts .container {
     width: 100%;
