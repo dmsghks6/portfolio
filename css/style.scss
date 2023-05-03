@@ -701,6 +701,13 @@
     
                 }
 
+                .mid{
+                    p{
+                        color: $subColor;
+                        margin-top: 8px;
+                    }
+                }
+
                 .line{
                     width: 215px;
                     height: 1px;
@@ -935,6 +942,12 @@
                     }
     
                 }
+                .mid{
+                    p{
+                        color: $subColor;
+                        margin-top: 8px;
+                    }
+                }
 
                 .line{
                     width: 215px;
@@ -1043,6 +1056,13 @@
                             .name{
                                 color: $subColor;
                                 flex-shrink: 0;
+                            }
+                        }
+
+                        .mid{
+                            p{
+                                color: $subColor;
+                                margin-top: 8px;
                             }
                         }
 

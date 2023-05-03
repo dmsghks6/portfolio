@@ -513,6 +513,10 @@ img, svg, video, iframe {
   color: #a21414;
   flex-shrink: 0;
 }
+.web-1 .container .web-1-left .info-box .info-left .mid p {
+  color: #a21414;
+  margin-top: 8px;
+}
 .web-1 .container .web-1-left .info-box .info-left .line {
   width: 215px;
   height: 1px;
@@ -671,6 +675,10 @@ img, svg, video, iframe {
   color: #a21414;
   flex-shrink: 0;
 }
+.web-2 .container .web-2-right .info-box .info-left .mid p {
+  color: #a21414;
+  margin-top: 8px;
+}
 .web-2 .container .web-2-right .info-box .info-left .line {
   width: 215px;
   height: 1px;
@@ -742,6 +750,10 @@ img, svg, video, iframe {
 .web-3 .container .web-3-wrap .web-3-left .info-box .info-left .top .name {
   color: #a21414;
   flex-shrink: 0;
+}
+.web-3 .container .web-3-wrap .web-3-left .info-box .info-left .mid p {
+  color: #a21414;
+  margin-top: 8px;
 }
 .web-3 .container .web-3-wrap .web-3-left .info-box .info-left .line {
   width: 100%;
