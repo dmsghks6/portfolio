@@ -1759,8 +1759,7 @@ img, svg, video, iframe {
     -webkit-text-stroke-color: #000000;
   }
   .about .container .about-right .img {
-    left: -22%;
-    height: 213px;
+    display: none;
   }
   .portfolio .web-1 .container .web-1-left .title {
     font-size: 50px;
