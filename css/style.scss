@@ -2948,20 +2948,36 @@
         }
     }
 
-    .web-3{
-        .container{
-            .canvas{
-                width: 100%;
-
-                .canvas-wrap{
-                    animation: slider 55s linear infinite;
+    .portfolio{
+        .web-3{
+            .container{
+                .canvas{
+                    width: 100%;
+    
+                    .canvas-wrap{
+                        animation: slider 55s linear infinite;
+                    }
+                    
+                    
                 }
                 
-                
+                .web-3-wrap{
+                    .web-3-left{
+                        
+                        display: flex;
+                        flex-direction: row-reverse;
+                        justify-content: flex-start;
+                        width: 100%;
+                        margin-bottom: 50px;
+                        .info-box{
+                            margin:0
+                        }
+                    }
+                }
             }
-            
         }
     }
+   
   
    
 

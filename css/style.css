@@ -1860,11 +1860,21 @@ img, svg, video, iframe {
     width: 100%;
     height: 87%;
   }
-  .web-3 .container .canvas {
+  .portfolio .web-3 .container .canvas {
     width: 100%;
   }
-  .web-3 .container .canvas .canvas-wrap {
+  .portfolio .web-3 .container .canvas .canvas-wrap {
     animation: slider 55s linear infinite;
+  }
+  .portfolio .web-3 .container .web-3-wrap .web-3-left {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .portfolio .web-3 .container .web-3-wrap .web-3-left .info-box {
+    margin: 0;
   }
   .uiux-1 .container .uiux-1-bottom .info-box .info-left .top .explain {
     font-size: 0.75rem;
