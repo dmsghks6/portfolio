@@ -409,6 +409,8 @@ img, svg, video, iframe {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+  width: 70%;
+  padding: 2%;
 }
 .portfolio .portfolio-right .title {
   font-size: 300px;
@@ -422,12 +424,12 @@ img, svg, video, iframe {
 .portfolio .portfolio-left {
   display: flex;
   align-items: flex-end;
-  width: 700px;
+  width: 30%;
 }
 .portfolio .portfolio-left .img {
   background: url(../img/Rectangle-100.png) no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   width: 550px;
   height: 626px;
 }
@@ -489,6 +491,7 @@ img, svg, video, iframe {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 24px;
 }
 .web-1 .container .web-1-left .title {
   font-size: 200px;
@@ -1138,7 +1141,7 @@ img, svg, video, iframe {
     font-size: 75px;
   }
   .portfolio .web-1 .web-1-left {
-    padding: 0 0 8px 16px;
+    padding: 0 0 8px 24px;
   }
   .portfolio .web-1 .web-1-left .title {
     font-size: 120px;
@@ -1256,7 +1259,7 @@ img, svg, video, iframe {
     width: calc(100% - 60px);
   }
 }
-@media (max-width: 960px) {
+@media (max-width: 965px) {
   .side-menu .menu .menu-title {
     font-size: 5rem;
     width: 250px;
@@ -1310,10 +1313,16 @@ img, svg, video, iframe {
     width: 170px;
   }
   .portfolio .container .portfolio-left .img {
-    height: 350px;
+    width: 100%;
   }
   .portfolio .container .portfolio-right .title {
     font-size: 145px;
+  }
+  .portfolio .container .portfolio-right .rotate-wrap {
+    width: 100%;
+  }
+  .portfolio .container .portfolio-right .rotate-wrap .rotate {
+    width: 100%;
   }
   .portfolio .web-1 .container {
     display: block;
@@ -1500,6 +1509,35 @@ img, svg, video, iframe {
   }
   .uiux-1 .container .uiux-1-bottom .info-box .info-right p:nth-child(2) {
     transform: translateY(-24px);
+  }
+}
+@media (max-width: 700px) {
+  .main-page .container {
+    width: 500px;
+  }
+  .main-page .container .row-1 {
+    font-size: 50px;
+  }
+  .main-page .container .row-1 .img {
+    margin: 0 16px;
+  }
+  .main-page .container .row-1 span {
+    font-size: 30px;
+  }
+  .main-page .container .row-2 {
+    font-size: 50px;
+  }
+  .main-page .container .row-3 {
+    font-size: 50px;
+  }
+  .main-page .container .row-4 {
+    font-size: 70px;
+  }
+  .portfolio .container .portfolio-right .title {
+    font-size: 100px;
+  }
+  .portfolio .container .portfolio-right .chapter {
+    font-size: 60px;
   }
 }
 @media (max-width: 500px) {

@@ -175,8 +175,9 @@ $('#offset-contacts').click(function(x){
     scrollTrigger: {
         trigger: ".portfolio",
         pin: true,
-        scrub: 1,
-        // snap: 1 / (sections.length - 1),
+        scrub: 2,
+        snap: 1 / (sections.length - 1),
+        
         end: () => "+=" + document.querySelector(".portfolio").offsetWidth
         // (.panel)
     }
