@@ -396,7 +396,7 @@
     padding-bottom: 100px;
 
     .container{
-        width: 1800px;
+        width: 1900px;
         /* height: 901px;/ */
         border-width: 0px 0px 2.5px 0px;
         border-style: solid;
@@ -1205,7 +1205,8 @@
                     right: 60px;
                     font-size: 40px;
                     animation: bounce 1.75s infinite;
-                    color: #be0000;
+                    color: #ffffff;
+                    text-shadow: 1px 0px 5px gray;
     
                     @keyframes bounce {
                         0%,
@@ -1445,9 +1446,12 @@
                 }
             }
             .web-2-right{
-                height: 71%;
+                height: auto;
+                align-items: center;
+                justify-content: space-between;
 
                 .big-title{
+                    margin-top: 0;
                     .portfolio-name{
                         font-size: 85px;
                     }
@@ -1460,7 +1464,18 @@
             }
         }
 
+        .web-3{
+            .container{
+                .web-3-wrap{
+                    .web-3-right{
+                        &::before{
+                            width: 400px;
 
+                        }
+                    }
+                }
+            }
+        }
         // uiux
         .uiux-1{
             .uiux-1-bottom{
@@ -1487,6 +1502,61 @@
 
 
 
+}
+
+@media (max-width : 1450px){
+    .portfolio{
+        .web-1{
+            .web-1-left{
+                .title{
+                    font-size: 120px;
+                }
+            }
+        }
+        
+        .web-2{
+            .container{
+                .web-2-right{
+                    .info-box{
+                        display: block;
+
+                        .info-right{
+                            margin: 40px auto 0;
+                            width: 250px;
+                        }
+
+                        .info-left{
+                            margin: 0 auto;
+                            width: 250px;
+}
+                        }
+                    }
+                }
+            }
+        }
+
+        .web-3{
+            .container{
+                .web-3-wrap{
+                    width: 100%;
+
+                    .web-3-left{
+                        width: 40%;
+                    }
+
+                    .web-3-right{
+                        width: 60%;
+
+                        .masion{
+                            width: 100%;
+                        }
+                    }
+                }
+
+
+            }
+        }
+    
 }
 
 @media (max-width : 1200px){
@@ -1766,10 +1836,9 @@
 
                 .info-box{
                     width: 100%;
-                    display: block;
 
                     .info-left{
-                        width: 100%;
+                    
 
                         .line{
                             width: 95%;
@@ -1799,6 +1868,10 @@
     
                         .masion{
                             width: calc(58vw - 60px);
+
+                            .click-down{
+                                right: 65px;
+                            }
                         }
                         &::before{
                             width: 400px;
@@ -2201,9 +2274,11 @@
                 display: block;
 
                 .web-2-left{
+                    
                     display: block;
                     width: 100%;
                     height: 50%;
+                    
 
                     .thebarnnet{
                         width: 95%;
@@ -2213,13 +2288,23 @@
                 }
 
                 .web-2-right{
-                    width: 100%;
+                    width: calc(100% - 60px);
                     height: 50%;
                     padding: 0 20px 0;
 
                     .info-box{
                         padding: 0 20px 0 0;
                         width: 70%;
+
+                        .info-left{
+                            margin: 0;
+                            width: 100%;
+                        }
+
+                        .info-right{
+                            width: 100%;
+                            margin: 24px 0 0;
+                        }
                     }
                 }
             }
