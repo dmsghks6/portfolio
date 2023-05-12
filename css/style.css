@@ -1260,8 +1260,15 @@ img, svg, video, iframe {
   .portfolio .web-2 .web-2-right .info-box .info-right .explain {
     margin-top: 8px;
   }
-  .portfolio .web-3 .container .web-3-wrap .web-3-right .masion {
-    width: calc(58vw - 60px);
+  .portfolio .web-3 .container .web-3-wrap .web-3-right .big-title {
+    align-items: flex-end;
+  }
+  .portfolio .web-3 .container .web-3-wrap .web-3-right .big-title .nub {
+    width: 70px;
+    height: 87px;
+  }
+  .portfolio .web-3 .container .web-3-wrap .web-3-right .big-title .portfolio-name {
+    font-size: 5.25rem;
   }
   .portfolio .web-3 .container .web-3-wrap .web-3-right .masion .click-down {
     right: 65px;
@@ -1446,6 +1453,9 @@ img, svg, video, iframe {
   }
 }
 @media (max-width: 760px) {
+  .side-menu .menu .menu-title {
+    width: 175px;
+  }
   .about {
     width: calc(100vw - 60px);
   }
@@ -1692,8 +1702,13 @@ img, svg, video, iframe {
   .about .container .about-left .body-2 {
     font-size: 1.125rem;
   }
+  .portfolio {
+    display: block;
+    height: auto;
+  }
   .portfolio .container {
     width: 100vw;
+    height: 100vh;
   }
   .portfolio .container .portfolio-right {
     padding-right: 30px;
@@ -1737,6 +1752,8 @@ img, svg, video, iframe {
   }
   .portfolio .web-2 .container .web-2-right {
     height: 40%;
+    margin: 0;
+    width: 100%;
   }
   .portfolio .web-2 .container .web-2-right .big-title .portfolio-name {
     font-size: 55px;
@@ -1770,6 +1787,7 @@ img, svg, video, iframe {
     display: block;
   }
   .portfolio .web-3 .container .web-3-wrap .web-3-left {
+    width: 100%;
     margin: 0 8px 32px 0;
     display: flex;
     flex-direction: row-reverse;
@@ -1791,9 +1809,15 @@ img, svg, video, iframe {
     width: 100%;
     height: 50vh;
   }
+  .uiux-1 .container {
+    position: relative;
+  }
+  .uiux-1 .container .uiux-1-top .modify {
+    position: relative;
+  }
   .uiux-1 .container .uiux-1-top .modify .click-down {
     font-size: 30px;
-    right: 10px;
+    right: 25px;
   }
   .uiux-1 .container .uiux-1-bottom .info-box .info-left .top .first {
     width: 50%;
@@ -1809,8 +1833,10 @@ img, svg, video, iframe {
     bottom: 10%;
   }
   .uiux-1 .container .uiux-1-bottom .info-box .info-right {
-    margin-top: 22px;
-    width: 95%;
+    width: 100%;
+    position: absolute;
+    right: 24px;
+    bottom: 7%;
     font-size: 3.5rem;
   }
   .contacts .container {

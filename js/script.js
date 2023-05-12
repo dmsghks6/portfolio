@@ -160,40 +160,62 @@ $('#offset-contacts').click(function(x){
      //end 글자 색 바꾸기 
 
      
+//  스크롤트리거
 
     //  스크롤트리거
 
     gsap.registerPlugin(ScrollTrigger);
 
-    let sections = gsap.utils.toArray(".panel");
-
-    gsap.to(sections, {
-    // delay: 13, 
-    // stagger: 0.05,
-    xPercent: -100 * (sections.length - 1),
-    ease: "none",
-    scrollTrigger: {
-        trigger: ".portfolio",
-        pin: true,
-        scrub: 2,
-        snap: 1 / (sections.length - 1),
+    ScrollTrigger.matchMedia({
         
-        end: () => "+=" + document.querySelector(".portfolio").offsetWidth
-        // (.panel)
-    }
+        "(min-width: 501px)": function() {
+  
+            let sections = gsap.utils.toArray(".panel");
+  
+            gsap.to(sections, {
+            // delay: 13, 
+            // stagger: 0.05,
+            xPercent: -100 * (sections.length - 1),
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".portfolio",
+                pin: true,
+                scrub: 1,
+                snap: 1 / (sections.length - 1),
+                end: () => "+=" + document.querySelector(".portfolio").offsetWidth
+                // (.panel)
+            }
+            
+            }); 
+  
+    }, 
     
-    }); 
-
+        "(max-width: 500px)": function() {
+       
+        //   let sections = gsap.utils.toArray(".panel");
+  
+        //     gsap.to(sections, {
+        //     // delay: 13, 
+        //     // stagger: 0.05,
+        //     xPercent: 0,
+        //     ease: "none",
+        //     scrollTrigger: {
+        //       //   trigger: ".portfolio",
+        //       //   pin: true,
+        //       //   scrub: 1,
+        //       //   snap: 1 / (sections.length - 1),
+        //       //   end: () => "+=" + document.querySelector(".portfolio").offsetWidth
+        //         // (.panel)
+        //     }
+            
+        //     }); 
+         
+    }, 
     
+  
     
- 
-
-
-
-
-
-
-
-     
+    });
+  
+    
 });
 

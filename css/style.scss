@@ -1865,9 +1865,22 @@
             .container{
                 .web-3-wrap{
                     .web-3-right{
+                        .big-title{
+                            align-items: flex-end;
+
+                            .nub{
+                                width: 70px;
+                                height: 87px;
+                            }
+
+                            .portfolio-name{
+                                font-size: 5.25rem;
+                                // transform: translateY(12px);
+                            }
+                        }
     
                         .masion{
-                            width: calc(58vw - 60px);
+                            // width: calc(58vw - 60px);
 
                             .click-down{
                                 right: 65px;
@@ -2209,6 +2222,14 @@
 }
 
 @media (max-width : 760px){
+
+    .side-menu{
+        .menu{
+            .menu-title{
+                width: 175px;
+            }
+        }
+    }
 
     .about{
        
@@ -2608,10 +2629,17 @@
     }
 
 
+    // 가로스크롤 빼기
+
+
     // 첫장 
     .portfolio{
+        display: block;
+        height: auto;
+
         .container{
             width: 100vw;
+            height: 100vh;
             .portfolio-right{
                 padding-right: 30px;
 
@@ -2693,6 +2721,9 @@
 
                 .web-2-right{
                     height: 40%;
+                    margin: 0;
+                    width: 100%;
+
 
                     .big-title{
                         .portfolio-name{
@@ -2752,6 +2783,7 @@
                    
     
                     .web-3-left{
+                        width: 100%;
                         margin: 0 8px 32px 0;
                         display: flex;
 
@@ -2787,11 +2819,13 @@
 
     .uiux-1{
         .container{
+            position: relative;
             .uiux-1-top{
                 .modify{
+                    position: relative;
                     .click-down{
                         font-size: 30px;
-                        right: 10px;
+                        right: 25px;
                     }
                 }
             }
@@ -2821,8 +2855,11 @@
                     }
 
                     .info-right{
-                        margin-top: 22px;
-                        width: 95%;
+                        width: 100%;
+                        position: absolute;
+                        right: 24px;
+                        bottom: 7%;
+                        
                         font-size: 3.5rem;
                     }
                 }
