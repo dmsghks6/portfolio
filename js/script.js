@@ -1,53 +1,7 @@
 $(document).ready(function(){
 
 
-    // 커서 커스텀 
-    // $(function() {
-
-    //     var prefix = function() {
-
-    //       var a = window.getComputedStyle(document.documentElement, ""),
-
-    //         b = (Array.prototype.slice.call(a).join("").match(/-(moz|webkit|ms)-/) || "" === a.OLink && ["", "o"])[1];
-
-    //       return "WebKit|Moz|MS|O".match(new RegExp("(" + b + ")", "i"))[1], "-" + b + "-"
-
-    //     }();
-
-    //     $(document).mousemove(function(e) {
-
-    //       mouseX = e.pageX + 15;
-
-    //       mouseY = e.pageY - $(window).scrollTop() + 15;
-
-    //       $('.theBall-outer').attr('style', prefix + 'transform:translate(' + mouseX + 'px,' + mouseY + 'px)');
-
-    //     });
-    //   })
-
-    // //   cursor change
-    // $('.bl').hover(function(){
-    //     $('.theBall-outer').addClass('zoom');
-    // },function(){
-    //     $('.theBall-outer').removeClass('zoom');
-    // });
-
     
-    // $('.bl2').hover(function(){
-    //     $('.theBall-outer').addClass('zoom2');
-    // },function(){
-    //     $('.theBall-outer').removeClass('zoom2');
-    // });
-
-    
-    // $('.bl3').hover(function(){
-    //     $('.theBall-outer').addClass('zoom3');
-    // },function(){
-    //     $('.theBall-outer').removeClass('zoom3');
-    // });
-
-
-
     // side 누르면 메뉴 나오게 
 
     $('.hamburger').click(function(){
@@ -90,9 +44,7 @@ $('#offset-contacts').click(function(x){
         },1000)
 });
 
-//     btn3.addEventListener('click',function(){
-//     window.scrollTo({left:0, top:box_pst3, behavior:'smooth'}) 
-// });
+
 
 
 

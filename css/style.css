@@ -394,7 +394,7 @@ img, svg, video, iframe {
 /* portfolio 부분  */
 /* 가로스크롤  */
 .portfolio {
-  width: 500vw;
+  width: 600vw;
   height: 100vh;
   display: flex;
   flex-wrap: nowrap;
@@ -564,14 +564,20 @@ img, svg, video, iframe {
   height: 278px;
   top: -5%;
   left: -10%;
+  z-index: 1;
 }
 .web-1 .container .web-1-right .ewha {
   display: block;
-  background: url(../img/ewha-bg.png) no-repeat center;
+  background: url(../img/ewha-bg-c.png) no-repeat center;
   background-size: cover;
   background-position: center;
+  filter: grayscale(1);
   width: 54vw;
   height: 100%;
+  transition: 0.3s;
+}
+.web-1 .container .web-1-right .ewha:hover {
+  filter: grayscale(0);
 }
 .web-1 .container .web-1-right .ewha .click-down {
   position: absolute;
@@ -616,11 +622,16 @@ img, svg, video, iframe {
 }
 .web-2 .container .web-2-left .thebarnnet {
   display: block;
-  background: url(../img/thebarnnet-bg.png) no-repeat center;
+  background: url(../img/thebarnnet-bg-c.png) no-repeat center;
   background-size: cover;
   background-position: center;
+  filter: grayscale(1);
   width: 63vw;
   height: 95%;
+  transition: 0.3s;
+}
+.web-2 .container .web-2-left .thebarnnet:hover {
+  filter: grayscale(0);
 }
 .web-2 .container .web-2-left .thebarnnet .click-down {
   position: absolute;
@@ -793,10 +804,11 @@ img, svg, video, iframe {
   height: 537px;
   top: -65%;
   left: -12%;
+  z-index: 9;
 }
 .web-3 .container .web-3-wrap .web-3-right .big-title {
   display: flex;
-  z-index: 1;
+  z-index: 99;
   position: absolute;
   top: -24%;
 }
@@ -810,11 +822,16 @@ img, svg, video, iframe {
 }
 .web-3 .container .web-3-wrap .web-3-right .masion {
   display: block;
-  background: url(../img/web-3-bg.png) no-repeat center;
+  background: url(../img/web-3-bg-c.png) no-repeat center;
   background-position: center;
   background-size: cover;
+  filter: grayscale(1);
   width: 58vw;
   height: 54vh;
+  transition: 0.3s;
+}
+.web-3 .container .web-3-wrap .web-3-right .masion:hover {
+  filter: grayscale(0);
 }
 .web-3 .container .web-3-wrap .web-3-right .masion .click-down {
   position: absolute;
@@ -836,6 +853,121 @@ img, svg, video, iframe {
   }
 }
 
+.web-4 .container {
+  height: 100vh;
+}
+.web-4 .container .web-4-wrap {
+  width: calc(100% - 79px);
+  display: flex;
+}
+.web-4 .container .web-4-wrap .web-4-left {
+  width: 62%;
+  flex-shrink: 0;
+  position: relative;
+}
+.web-4 .container .web-4-wrap .web-4-left::before {
+  content: "";
+  position: absolute;
+  background: url(../img/web-3-rectangle.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 500px;
+  height: 537px;
+  bottom: -20%;
+  right: -17%;
+  rotate: 147deg;
+  z-index: 9;
+}
+.web-4 .container .web-4-wrap .web-4-left .aesop {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/aesop-bg-c.png) no-repeat center;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1);
+  transition: 0.3s;
+}
+.web-4 .container .web-4-wrap .web-4-left .aesop:hover {
+  filter: grayscale(0);
+}
+.web-4 .container .web-4-wrap .web-4-left .aesop .click-down {
+  position: absolute;
+  top: 100px;
+  left: 60px;
+  font-size: 40px;
+  animation: bounce 1.75s infinite;
+  color: #ffffff;
+  text-shadow: 1px 0px 5px gray;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-7px);
+  }
+  60% {
+    transform: translateY(-3.5px);
+  }
+}
+.web-4 .container .web-4-wrap .web-4-right {
+  padding: 56px 0 0 56px;
+}
+.web-4 .container .web-4-wrap .web-4-right .title {
+  display: flex;
+  align-items: flex-end;
+}
+.web-4 .container .web-4-wrap .web-4-right .title .nub {
+  width: 100px;
+}
+.web-4 .container .web-4-wrap .web-4-right .title .name {
+  margin-left: 20px;
+  font-size: 100px;
+  font-family: "Homenaje", sans-serif;
+}
+.web-4 .container .web-4-wrap .web-4-right .info-box {
+  font-size: 1.25rem;
+  display: flex;
+  margin: 40px 0 40px 16px;
+}
+.web-4 .container .web-4-wrap .web-4-right .info-box .info-left {
+  width: 223px;
+}
+.web-4 .container .web-4-wrap .web-4-right .info-box .info-left .top {
+  display: flex;
+}
+.web-4 .container .web-4-wrap .web-4-right .info-box .info-left .top .name {
+  color: #a21414;
+  flex-shrink: 0;
+}
+.web-4 .container .web-4-wrap .web-4-right .info-box .info-left .mid p {
+  color: #a21414;
+  margin-top: 8px;
+}
+.web-4 .container .web-4-wrap .web-4-right .info-box .info-left .line {
+  width: 100%;
+  height: 1px;
+  background-color: #b8b8b8;
+  margin: 16px 0;
+}
+.web-4 .container .web-4-wrap .web-4-right .info-box .info-left .bottom ul li {
+  list-style: disc;
+  margin-left: 16px;
+}
+.web-4 .container .web-4-wrap .web-4-right .info-box .info-right {
+  margin-left: 24px;
+  width: 223px;
+}
+.web-4 .container .web-4-wrap .web-4-right .info-box .info-right .name {
+  font-size: 1.25rem;
+}
+.web-4 .container .web-4-wrap .web-4-right .info-box .info-right .explain {
+  font-family: "Nokora", sans-serif;
+  font-size: 1rem;
+  margin-top: 16px;
+}
+
 .uiux-1 .container {
   height: 100vh;
   display: block;
@@ -843,10 +975,15 @@ img, svg, video, iframe {
 .uiux-1 .container .uiux-1-top {
   width: 100%;
   height: 43vh;
-  background: url(../img/uiux-bg.png) no-repeat center;
+  background: url(../img/uiux-bg-c.png) no-repeat center;
   background-position: center;
   background-size: cover;
+  filter: grayscale(1);
   cursor: pointer;
+  transition: 0.3s;
+}
+.uiux-1 .container .uiux-1-top:hover {
+  filter: grayscale(0);
 }
 .uiux-1 .container .uiux-1-top .modify {
   display: block;
@@ -1061,6 +1198,34 @@ img, svg, video, iframe {
   }
   .web-3 .container .web-3-wrap .web-3-right .masion {
     width: 100%;
+  }
+  .web-4 .container .web-4-wrap {
+    display: block;
+    width: 100%;
+  }
+  .web-4 .container .web-4-wrap .web-4-left {
+    width: 100%;
+    height: 50%;
+  }
+  .web-4 .container .web-4-wrap .web-4-left::before {
+    width: 400px;
+    height: 400px;
+    bottom: -33%;
+    right: -8%;
+  }
+  .web-4 .container .web-4-wrap .web-4-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 50%;
+    padding: 0 50px 20px 20px;
+  }
+  .web-4 .container .web-4-wrap .web-4-right .info-box {
+    margin: 0;
+  }
+  .uiux-1 .container .uiux-1-bottom .info-box .info-left .top .first span {
+    color: #400d0d;
   }
 }
 @media (max-width: 1200px) {
@@ -1430,6 +1595,19 @@ img, svg, video, iframe {
     height: 59px;
     margin-right: 8px;
   }
+  .portfolio .web-4 .container .web-4-wrap .web-4-right {
+    display: block;
+    padding-top: 8px;
+  }
+  .portfolio .web-4 .container .web-4-wrap .web-4-right .title .nub {
+    width: 70px;
+  }
+  .portfolio .web-4 .container .web-4-wrap .web-4-right .title .name {
+    font-size: 80px;
+  }
+  .portfolio .web-4 .container .web-4-wrap .web-4-right .info-box {
+    margin-top: 32px;
+  }
   .uiux-1 .container .uiux-1-bottom .info-box {
     display: block;
   }
@@ -1592,6 +1770,12 @@ img, svg, video, iframe {
   }
   .portfolio .container .portfolio-right .chapter {
     font-size: 60px;
+  }
+  .web-4 .container .web-4-wrap .web-4-left::before {
+    width: 250px;
+    height: 250px;
+    bottom: -23%;
+    right: -7%;
   }
 }
 @media (max-width: 500px) {
@@ -1775,6 +1959,10 @@ img, svg, video, iframe {
     width: 100%;
     height: 100%;
   }
+  .portfolio .web-2 .container .web-2-left::before {
+    width: 350px;
+    height: 350px;
+  }
   .portfolio .web-3 .container .canvas {
     width: 100%;
   }
@@ -1809,6 +1997,45 @@ img, svg, video, iframe {
     width: 100%;
     height: 50vh;
   }
+  .portfolio .web-4 .container .web-4-wrap .web-4-right {
+    padding: 4px;
+  }
+  .portfolio .web-4 .container .web-4-wrap .web-4-right .title .nub {
+    width: 40px;
+  }
+  .portfolio .web-4 .container .web-4-wrap .web-4-right .title .name {
+    font-size: 3rem;
+  }
+  .portfolio .web-4 .container .web-4-wrap .web-4-right .info-box {
+    margin-top: 16px;
+  }
+  .portfolio .web-4 .container .web-4-wrap .web-4-right .info-box .info-left .top .name {
+    font-size: 1rem;
+  }
+  .portfolio .web-4 .container .web-4-wrap .web-4-right .info-box .info-left .top .explain {
+    font-size: 1rem;
+  }
+  .portfolio .web-4 .container .web-4-wrap .web-4-right .info-box .info-left .mid {
+    font-size: 1.1rem;
+  }
+  .portfolio .web-4 .container .web-4-wrap .web-4-right .info-box .info-left .bottom {
+    font-size: 1rem;
+  }
+  .portfolio .web-4 .container .web-4-wrap .web-4-right .info-box .info-left .line {
+    margin: 8px 0;
+  }
+  .portfolio .web-4 .container .web-4-wrap .web-4-right .info-box .info-right {
+    display: none;
+  }
+  .portfolio .web-4 .container .web-4-wrap .web-4-left .aesop .click-down {
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+  }
+  .portfolio .web-4 .container .web-4-wrap .web-4-left::before {
+    width: 150px;
+    height: 150px;
+  }
   .uiux-1 .container {
     position: relative;
   }
@@ -1821,6 +2048,9 @@ img, svg, video, iframe {
   }
   .uiux-1 .container .uiux-1-bottom .info-box .info-left .top .first {
     width: 50%;
+  }
+  .uiux-1 .container .uiux-1-bottom .info-box .info-left .top .first span {
+    color: #a21414;
   }
   .uiux-1 .container .uiux-1-bottom .info-box .info-left .top .second {
     width: 50%;
@@ -1872,19 +2102,21 @@ img, svg, video, iframe {
   .portfolio .web-1 .container .web-1-left .title {
     font-size: 50px;
   }
+  .portfolio .web-1 .container .web-1-left .info-box .info-left .mid {
+    font-size: 1.1rem;
+  }
   .portfolio .web-1 .container .web-1-right::before {
     width: 125px;
     height: 265px;
     top: -18%;
     left: 74%;
   }
-  .portfolio .web-2 .container .web-2-left::before {
-    width: 415px;
-    height: 500px;
-  }
   .portfolio .web-2 .container .web-2-left .thebarnnet {
     width: 100%;
     height: 87%;
+  }
+  .portfolio .web-2 .container .web-2-right .info-box .info-left .mid {
+    font-size: 1.1rem;
   }
   .portfolio .web-3 .container .canvas {
     width: 100%;
@@ -1901,6 +2133,9 @@ img, svg, video, iframe {
   }
   .portfolio .web-3 .container .web-3-wrap .web-3-left .info-box {
     margin: 0;
+  }
+  .portfolio .web-3 .container .web-3-wrap .web-3-left .info-box .info-left .mid {
+    font-size: 1.1rem;
   }
   .uiux-1 .container .uiux-1-bottom .info-box .info-left .top .explain {
     font-size: 0.75rem;
