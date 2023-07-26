@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-    
+    git add .
     // side 누르면 메뉴 나오게 
 
     $('.hamburger').click(function(){

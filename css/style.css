@@ -353,7 +353,7 @@ img, svg, video, iframe {
 .about .container .about-left .head-title::after {
   content: "";
   position: absolute;
-  width: 1000px;
+  width: 1200px;
   height: 2px;
   transform: scaleX(0);
   height: 2px;
