@@ -110,7 +110,7 @@ $('#offset-contacts').click(function(x){
      //end 글자 색 바꾸기 
 
      
-//  스크롤트리거
+
 
     //  스크롤트리거
 
